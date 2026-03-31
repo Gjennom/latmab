@@ -57,7 +57,7 @@ void free_double_vector(double_vector* dest){
 	free(dest->data);
 }
 
-chunk code_vector(){
+code_vector new_code_vector(){
 	code_vector result;
 	result.data = calloc(8,sizeof(uint8_t));
 	result.size = 0;
